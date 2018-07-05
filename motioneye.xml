@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <TemplateURL></TemplateURL>
+  <Beta>False</Beta>
+  <Category>Downloaders: MediaApp:Video</Category>
+  <Date>2017-04-17</Date>
+  <Name>motionEye</Name>
+  <Changes></Changes>
+  <Support></Support>
+  <Description></Description>
+  <Project>https://github.com/ccrisan/motioneye/wiki</Project>
+  <Overview></Overview>
+  <Registry>https://hub.docker.com/r/ccrisan/motioneye/</Registry>
+  <Repository>ccrisan/motioneye</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+  </Environment>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8765</HostPort>
+        <ContainerPort>8765</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/etc/localtime</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/etc/motioneye</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/var/lib/motioneye</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>992c56ab</Version>
+  <WebUI>http://[IP]:[PORT:8765]/</WebUI>
+  <Icon></Icon>
+  <ExtraParams></ExtraParams>
+<BaseImage>ccrisan/motioneye:master-amd64</BaseImage>
+</Container>
