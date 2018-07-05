@@ -11,7 +11,7 @@
   <Project>https://github.com/ccrisan/motioneye/wiki</Project>
   <Overview></Overview>
   <Registry>https://hub.docker.com/r/ccrisan/motioneye/</Registry>
-  <Repository>ccrisan/motioneye</Repository>
+  <Repository>ccrisan/motioneye:master-amd64</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
